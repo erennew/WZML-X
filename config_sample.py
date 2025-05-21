@@ -1,9 +1,9 @@
 # REQUIRED CONFIG
-BOT_TOKEN = ""
-OWNER_ID = 0
-TELEGRAM_API = 0
-TELEGRAM_HASH = ""
-DATABASE_URL = ""
+BOT_TOKEN = "1599848664:AAHc75il2BECWK39tiPv4pVf-gZdPt4MFcw"
+OWNER_ID = 1047253913
+TELEGRAM_API = 24500584
+TELEGRAM_HASH = "449da69cf4081dc2cc74eea828d0c490"
+DATABASE_URL = "mongodb+srv://erenyeagermikasa84:pkbOXb3ulzi9cEFd@cluster0.ingt8mt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # OPTIONAL CONFIG
 DEFAULT_LANG = "en"
@@ -12,7 +12,7 @@ TG_PROXY = (
 )  # {"scheme": ”socks5”, "hostname": ””, "port": 1234, "username": ”user”, "password": ”pass”}
 USER_SESSION_STRING = ""
 CMD_SUFFIX = ""
-AUTHORIZED_CHATS = ""
+AUTHORIZED_CHATS = "-1002072871676"
 SUDO_USERS = ""
 STATUS_LIMIT = 10
 DEFAULT_UPLOAD = "rc"
@@ -84,7 +84,7 @@ IMDB_TEMPLATE = """<b>Title: </b> {title} [{year}]
 <a href="{url_cast}">Read More ...</a>"""
 
 # Task Tools
-FORCE_SUB_IDS = ""
+FORCE_SUB_IDS = "-1001333766434"
 MEDIA_STORE = True
 DELETE_LINKS = False
 CLEAN_LOG_MSG = False
