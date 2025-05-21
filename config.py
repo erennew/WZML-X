@@ -144,7 +144,7 @@ USENET_SERVERS = [
 ]
 
 # Update
-UPSTREAM_REPO = ""
+UPSTREAM_REPO = "https://github.com/erennew/WZML-X.git"
 UPSTREAM_BRANCH = "master"
 UPDATE_PKGS = True
 
