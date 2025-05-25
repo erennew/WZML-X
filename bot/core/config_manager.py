@@ -62,6 +62,7 @@ class Config:
     LEECH_PREFIX = ""
     LEECH_CAPTION = ""
     LEECH_SUFFIX = ""
+    LEECH_REMNAME = ""
     LEECH_FONT = ""
     LEECH_SPLIT_SIZE = 2097152000
     MEDIA_GROUP = False
