@@ -41,6 +41,7 @@ leech_options = [
     "LEECH_PREFIX",
     "LEECH_SUFFIX",
     "LEECH_CAPTION",
+    "LEECH_REMNAME",
     "THUMBNAIL_LAYOUT",
 ]
 rclone_options = ["RCLONE_CONFIG", "RCLONE_PATH", "RCLONE_FLAGS"]
@@ -93,6 +94,11 @@ user_settings_text = {
         "",
         "",
         "Send Leech Filename Suffix. You can add HTML tags. Example: <code>@mychannel</code>.</i> \n┖ <b>Time Left :</b> <code>60 sec</code>",
+    ),
+    "LEECH_REMNAME": (
+        "", 
+        "", 
+        "Send filename remname patterns (regex) for leech files.</i>\n<b>Format:</b> pattern1|pattern2|pattern3\n<b>Example:</b> \[.*\]|\(.*\)|^\s+|\s+$ (removes brackets and extra spaces)\n┖ <b>Time Left :</b> <code>60 sec</code>",
     ),
     "LEECH_CAPTION": (
         "",
@@ -400,6 +406,7 @@ async def get_user_settings(from_user, stype="main"):
 ┠ Media Group → <b>{media_group}</b>
 ┠ Leech Prefix → <code>{escape(lprefix)}</code>
 ┠ Leech Suffix → <code>{escape(lsuffix)}</code>
+┠ Leech Remname → <code>{escape(lremname)}</code>
 ┠ Leech Caption → <code>{escape(lcap)}</code>
 ┠ Leech Destination → <code>{leech_dest}</code>
 ┠ Leech by <b>{leech_method}</b> session
