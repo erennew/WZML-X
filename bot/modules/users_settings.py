@@ -297,7 +297,14 @@ async def get_user_settings(from_user, stype="main"):
             lsuffix = Config.LEECH_SUFFIX
         else:
             lsuffix = "Not Exists"
-
+        # New LEECH_REMNAME implementation
+        buttons.data_button("Leech Remname", f"userset {user_id} menu LEECH_REMNAME")
+        if user_dict.get("LEECH_REMNAME", False):
+            lremname = user_dict["LEECH_REMNAME"]
+        elif "LEECH_REMNAME" not in user_dict and Config.LEECH_REMNAME:
+            lremname = Config.LEECH_REMNAME
+        else:
+            lremname = "Not Exists"
         buttons.data_button("Leech Caption", f"userset {user_id} menu LEECH_CAPTION")
         if user_dict.get("LEECH_CAPTION", False):
             lcap = user_dict["LEECH_CAPTION"]
