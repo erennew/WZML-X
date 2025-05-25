@@ -67,6 +67,7 @@ class TelegramUploader:
         self._up_path = ""
         self._lprefix = ""
         self._lsuffix = ""
+        self._lremname = ""
         self._lcaption = ""
         self._lfont = ""
         self._bot_pm = False
@@ -93,6 +94,7 @@ class TelegramUploader:
             "BOT_PM": ("_bot_pm", False),
             "LEECH_PREFIX": ("_lprefix", ""),
             "LEECH_SUFFIX": ("_lsuffix", ""),
+            "LEECH_REMNAME": ("_lremname",""),
             "LEECH_CAPTION": ("_lcaption", ""),
             "LEECH_FONT": ("_lfont", ""),
         }
@@ -159,6 +161,10 @@ class TelegramUploader:
             self._lprefix = re_sub(r"<.*?>", "", self._lprefix).replace(r"\s", " ")
             if not file_.startswith(self._lprefix):
                 file_ = f"{self._lprefix}{file_}"
+        if self._lremname:
+            cap_file_ = re_sub(self._lremname, "", cap_file_)
+            file_ = re_sub(self._lremname, "", file_)
+            self._lremname = re_sub(r"<.*?>", "", self._lremname).replace(r"\s", " ")
 
         if self._lsuffix:
             name, ext = ospath.splitext(cap_file_)
