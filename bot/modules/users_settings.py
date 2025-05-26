@@ -84,7 +84,7 @@ user_settings_text = {
 * h:id/@username(hybrid leech) h: to upload files by bot and user based on file size.
 * id/@username|topic_id(leech in specific chat and topic) add | without space and write topic id after chat id or username.
 ┖ <b>Time Left :</b> <code>60 sec</code>""",
-    ),
+      ),
     "LEECH_PREFIX": (
         "",
         "",
@@ -98,13 +98,14 @@ user_settings_text = {
     "LEECH_REMNAME": (
         "", 
         "", 
-        "Send filename remname patterns (regex) for leech files.</i>\n<b>Format:</b> pattern1|pattern2|pattern3\n<b>Example:</b> \[.*\]|\(.*\)|^\s+|\s+$ (removes brackets and extra spaces)\n┖ <b>Time Left :</b> <code>60 sec</code>",
+        r"Send filename remname patterns (regex) for leech files.</i>\n<b>Format:</b> pattern1|pattern2|pattern3\n<b>Example:</b> \[.*\]|\(.*\)|^\s+|\s+$ (removes brackets and extra spaces)\n┖ <b>Time Left :</b> <code>60 sec</code>",
     ),
     "LEECH_CAPTION": (
         "",
         "",
         "Send Leech Caption. You can add HTML tags. Example: <code>@mychannel</code>.</i> \n┖ <b>Time Left :</b> <code>60 sec</code>",
     ),
+
     "THUMBNAIL_LAYOUT": (
         "",
         "",
